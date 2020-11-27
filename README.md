@@ -1,4 +1,9 @@
-# nuxtjs-numl-example
+# Nuxt.js + Numl.Design template project
+
+* [Nuxt.js](https://nuxtjs.org)
+* [Numl.Design](https://numl.design)
+
+The full guide with explanations is available here: [numl.design/handbook/integration/next-js](https://numl.design/handbook/integration/next-js)
 
 ## Build Setup
 
