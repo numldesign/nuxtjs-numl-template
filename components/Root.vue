@@ -26,21 +26,8 @@ function requireNude() {
 function initNude(router) {
   const { Nude } = window
 
-  Nude.routing.setRouter((url, openNewTab) => {
-    // skip outside links and links that open in new tabs
-    if (
-      openNewTab ||
-      url.startsWith('https://') ||
-      url.includes('//') ||
-      url.startsWith('mailto:') ||
-      url.includes('/api/')
-    ) {
-      return true
-    }
-
+  Nude.routing.setInternalRouter((url) => {
     router.push(url) // handle routing by Vue Router
-
-    return false
   })
 
   // OPTIONAL: define custom units
